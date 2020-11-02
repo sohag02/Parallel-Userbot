@@ -50,11 +50,16 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = (f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Friday Userbot](t.me/FridayOT)")
+    starttext = (f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\n
+                 My [➤ Master](tg://user?id={bot.uid}) \n
+                 You Can Talk/Contact My Master Using This Bot. \n\n
+                 If You Want Your Own Assistant You Can Deploy From Button Below. \n\n
+                 Powered By [Parallel Userbot](https://t.me/ParallelSupport)")
     if event.sender_id == bot.uid:
         await tgbot.send_message(
            vent,
-           message=f"Hi Master, It's Me {bot_id}, Your Assistant ! \nWhat You Wanna Do today ?",
+           message=f"Hi Master, It's Me {bot_id}, I'm Your Person Assistant Bot ! \n
+                     What You Wanna Do today ?",
            buttons = [
            [custom.Button.inline("Show Users 🔥", data="users")],
            [custom.Button.inline("Commands For Assistant", data="gibcmd")],
@@ -73,8 +78,8 @@ async def start(event):
            message=starttext,
            link_preview=False,
            buttons = [
-           [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
-           [Button.url("Help Me ❓", "t.me/Fridayot")]
+           [custom.Button.inline("Deploy your Parallel Userbot", data="deploy")],
+           [Button.url("Help Me ❓", "t.me/ParallelSupport")]
        ]
       )
 
@@ -90,7 +95,7 @@ async def help(event):
                 message="You Can Deploy Friday In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
                 buttons = [
                 [Button.url("Deploy Tutorial 📺", "https://youtu.be/xfHcm_e92eQ")],
-                [Button.url("Need Help ❓", "t.me/FridaySupportOfficial")]
+                [Button.url("Need Help ❓", "t.me/ParallelSupport")]
                  ]
                 )
 
@@ -111,14 +116,29 @@ async def users(event):
                      tedt_file,
                      force_document=True,
                      caption="Total Users In Your Bot.",
-                     allow_cache=False
+                      allow_cache=False
                      )
         else:
             pass
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
 async def users(event):
          await event.delete()
-         grabon = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
+         grabon = "Hello, Here Are My Commands \n
+                   ➤ /start - Check if I am Alive \n
+                   ➤ /ping - Pong! \n
+                   ➤ /tr <lang-code> \n
+                   ➤ /broadcast - Sends Message To all Users In Bot \n
+                   ➤ /id - Shows ID of User And Media. \n
+                   ➤ /addnote - Add Note \n
+                   ➤ /notes - Shows Notes \n
+                   ➤ /rmnote - Remove Note \n
+                   ➤ /alive - Am I Alive? \n
+                   ➤ /bun - Works In Group , Bans A User. \n
+                   ➤ /unbun - Unbans A User in Group \n
+                   ➤ /prumote - Promotes A User \n
+                   ➤ /demute - Demotes A User \n
+                   ➤ /pin - Pins A Message \n
+                   ➤ /stats - Shows Total Users In Bot"
          await tgbot.send_message(
              event.chat_id,
              grabon
@@ -187,7 +207,10 @@ async def sedlyfsir(event):
                  pass
     await tgbot.send_message(
         event.chat_id,
-        f"Broadcast Done in {sent_count} Group/Users and I got {error_count} Error and Total Number Was {len(userstobc)}"
+        f"Broadcast Done \n 
+          SUCCESSFUL : {sent_count} Group/Users \n 
+          ERRORS : {error_count} 
+          TOTAL NUMBER : {len(userstobc)}"
         )
 
 
@@ -198,7 +221,22 @@ async def starkisnoob(event):
     
 @tgbot.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
 async def starkislub(event):
-    grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
+    grabonx = "Hello, Here Are My Commands \n
+                   ➤ /start - Check if I am Alive \n
+                   ➤ /ping - Pong! \n
+                   ➤ /tr <lang-code> \n
+                   ➤ /broadcast - Sends Message To all Users In Bot \n
+                   ➤ /id - Shows ID of User And Media. \n
+                   ➤ /addnote - Add Note \n
+                   ➤ /notes - Shows Notes \n
+                   ➤ /rmnote - Remove Note \n
+                   ➤ /alive - Am I Alive? \n
+                   ➤ /bun - Works In Group , Bans A User. \n
+                   ➤ /unbun - Unbans A User in Group \n
+                   ➤ /prumote - Promotes A User \n
+                   ➤ /demute - Demotes A User \n
+                   ➤ /pin - Pins A Message \n
+                   ➤ /stats - Shows Total Users In Bot"
     await event.reply(grabonx)
     
 @tgbot.on(events.NewMessage(pattern="^/block ?(.*)", func=lambda e: e.sender_id == bot.uid))
