@@ -1,4 +1,4 @@
-# <u> FRIDAY-USERBOT 🇮🇳 </u>
+# <u> THE-PARALLEL-USERBOT 🇮🇳 </u>
 ## A Bot With Assistant Support 🔥
 
 <p align="center">
