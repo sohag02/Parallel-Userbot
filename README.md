@@ -1,4 +1,4 @@
-# <u> THE-PARALLEL-USERBOT </u>
+# <u> PARALLEL-USERBOT </u>
 ## A Bot With Assistant Support 🔥
 
 <p align="center">
