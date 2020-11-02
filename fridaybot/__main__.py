@@ -50,7 +50,7 @@ for name in files:
         shortname = path1.stem
         start_assistant(shortname.replace(".py", ""))
 
-print("Friday And Assistant Bot Have Been Installed Successfully !")
+print("Parallel And Assistant Bot Have Been Installed Successfully !")
 print("You Can Visit @FridayOT For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
