@@ -51,7 +51,7 @@ for name in files:
         start_assistant(shortname.replace(".py", ""))
 
 print("Parallel And Assistant Bot Have Been Installed Successfully !")
-print("You Can Visit @FridayOT For Any Support Or Doubts")
+print("You Can Visit @ParallelSupport For Any Support Or Doubts")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
