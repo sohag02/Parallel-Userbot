@@ -1,12 +1,12 @@
 {
-  "name": "Friday-Userbot",
-  "description": "A Userbot Based On Telethon By @StarkXD",
+  "name": "Parallel-Userbot",
+  "description": "A Userbot Based On Telethon ",
   "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
   "keywords": [
     "telegram",
-    "fridaybot",
+    "parallelbot",
     "plugin",
-    "telegram-fridaybot",
+    "telegram-parallelbot",
     "productivity"
   ],
   "repository": "https://github.com/starkgang/FridayUserbot",
